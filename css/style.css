@@ -336,7 +336,7 @@ header {
 #heyxviraj-progress,
 #heyxviraj-contact,
 #heyxviraj-about {
-  padding: 10em 0;
+  padding: 10em 0 0 0;
   clear: both;
   position: relative; }
   @media screen and (max-width: 768px) {
