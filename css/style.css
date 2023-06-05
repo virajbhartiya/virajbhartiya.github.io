@@ -53,6 +53,13 @@ p, span {
 ul, ol {
   display: block;
   margin-bottom: 1.5em; }
+code {
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  background: #ebebeb;
+  font-weight: normal;
+  border-radius: 2px; }
+
 
 span {
   font-size: 18px;

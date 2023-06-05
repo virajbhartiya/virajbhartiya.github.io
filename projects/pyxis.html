@@ -110,18 +110,19 @@
                   children about online scams and protects them from potential threats.
                 </p>
                 <h3>Building</h3>
-                <h4>Firebase</h4>
-                <p>The application work with <a href="https://console.firebase.google.com/u/0/"
-                    target="_blank">Firebase</a> as a backend server. You will have to create a project in
-                  firebase and synchronize the application with such project.<br>
-                  Enable the following development platforms on firebase: <code>Authentication, Realtime Database and
+                <strong>Note: Built using JDK-11</stong>
+                  <h4>Firebase</h4>
+                  <p>The application work with <a href="https://console.firebase.google.com/u/0/"
+                      target="_blank">Firebase</a> as a backend server. You will have to create a project in
+                    firebase and synchronize the application with such project.<br>
+                    Enable the following development platforms on firebase: <code>Authentication, Realtime Database and
                     Storage.</code>
-                </p>
-                <ul>
-                  <li>in authentication/sign-in method enable the <code>email</code> access provider</li>
-                  <li>in firebase real-time database assign the following rules:<br>
-                    <p>
-                      <code>
+                  </p>
+                  <ul>
+                    <li>in authentication/sign-in method enable the <code>email</code> access provider</li>
+                    <li>in firebase real-time database assign the following rules:<br>
+                      <p>
+                        <code>
                         {<br>
                           &emsp;"rules": {<br>
                             &emsp;&emsp;".read": "auth != null",<br>
@@ -129,10 +130,10 @@
                             &emsp;}<br>
                         }<br>
                       </code>
-                    </p>
-                  </li>
-                  <li>in firebase storage assign the following rules:<br>
-                    <code>
+                      </p>
+                    </li>
+                    <li>in firebase storage assign the following rules:<br>
+                      <p><code>
                     service firebase.storage {<br>
                       &emsp;match /b/{bucket}/o {<br>
                         &emsp; &emsp;match /{allPaths=**} {<br>
@@ -140,18 +141,18 @@
                           &emsp; &emsp;}<br>
                           &emsp;}<br>
                     }
-                  </code>
-                  </li>
-                </ul>
-                <h4>App Level <code>Build.gradle</code></h4>
-                <p>In the build.gradle assign the social network package of your preference. also you will have to
-                  recreate the view in xml of the social network<br>
-                  <code>
-                  ext {<br>
-                    &emsp;PACKAGE_CHECK_SOCIAL = "\"PHISHING-SOCIAL_NETWORK\""<br>
-                  }
-                </code>
-                </p>
+                     </code></p>
+                    </li>
+                  </ul>
+                  <h4>App Level <code>Build.gradle</code></h4>
+                  <p>In the build.gradle assign the social network package of your preference. also you will have to
+                    recreate the view in xml of the social network<br>
+                    <code>
+                      ext {<br>
+                        &emsp;PACKAGE_CHECK_SOCIAL = "\"PHISHING-SOCIAL_NETWORK\""<br>
+                      }
+                    </code>
+                  </p>
               </div>
             </div>
           </div>
