@@ -825,7 +825,12 @@ header {
 
 .article {
   display: block;
-  margin-bottom: 6em; }
+  margin-bottom: 6em; 
+
+  @media screen and (max-width: 768px) {
+    padding: 0 15px; 
+  }
+}
   .article .blog-img {
     margin-bottom: 50px;
     display: block;
