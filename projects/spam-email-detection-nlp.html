@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Alien</title>
+  <title>Spam Email Detection</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="" />
   <meta name="keywords" content="" />
@@ -70,74 +70,70 @@
             <div class="blog-entry animate-box col-pb-sm">
               <!-- <a href="blog.html" class="blog-img"><img src="../images/me.png" class="img-responsive" alt="Alien"></a> -->
               <div class="desc">
-                <h2>Let's talk <a href="https://github.com/virajbhartiya/Alien" target="_blank">Alien</a></h2>
-                <a href="https://github.com/virajbhartiya/Alien/releases" target="_blank">
+                <h2>Spam Email Detection
+                  using ML (NLP)</h2>
+                <a href="https://github.com/virajbhartiya/Spam-Email-Detection-NLP" target="_blank">
                   <div class="form-group">
-                    <input type="submit" value="Try Now" class="btn btn-primary">
+                    <input type="submit" value="Fork on GitHub" class="btn btn-primary">
                   </div>
                 </a>
-                <span><small>June 2023 </small> | <small> Virtual Screen Sharing </small> | <small><a
-                      href="https://github.com/virajbhartiya/Alien" target="_blank">Fork on GitHub</a></small></span>
-                <p><strong>Alien</strong>
-                  is an innovative desktop application that transforms any device with a web browser into a convenient
-                  secondary screen for your computer, utilizing a wireless connection. With Alien, you can effortlessly
-                  mirror your entire computer display onto any device screen equipped with a web browser. Additionally,
-                  it offers the flexibility to select and share a specific application window, making it perfect for
-                  presentations and focused content sharing.</p>
+                <span><small>July 2023 </small></span>
+                <p>In today's digital world, email spam is a persistent problem that affects individuals and
+                  organizations alike. To combat this issue, machine learning techniques, combined with Natural Language
+                  Processing (NLP), provide an effective solution for detecting email spam. In this blog, we will
+                  explore the working of a program that utilizes these technologies to identify spam emails.</p>
 
-                <p>The standout feature of Alien lies in its ability to utilize any device as a secondary screen. For a
-                  truly immersive extended desktop experience, Alien seamlessly integrates with Virtual Display Adapter.
-                  This combination enhances productivity and multitasking capabilities by expanding your workspace
-                  across multiple screens.</p>
+                <h3>Understanding the Program:</h3>
 
-                <p>Notably, Alien goes beyond traditional screen mirroring functionalities. You can leverage the
-                  application to transform your tablet or smartphone into a teleprompter without the need for a Virtual
-                  Display Adapter. By enabling the Flip Screen Mode, Alien mirrors your computer screen horizontally
-                  within the web browser of your tablet, creating a convenient teleprompter setup.</p>
+                <p>The program begins by importing the necessary libraries, such as NumPy, pandas, scikit-learn, and
+                  NLTK, which are essential for data manipulation, machine learning, and NLP tasks. Once the libraries
+                  are imported, the program loads the email dataset from a CSV file.</p>
 
-                <p>In summary, Alien revolutionizes the way you utilize screens by offering a versatile solution that
-                  transforms any device with a web browser into a secondary screen. Whether you need to mirror your
-                  entire display or focus on specific application windows, Alien provides seamless functionality.
-                  Experience true productivity and creativity by using Alien with Virtual Display Adapter, or harness
-                  the convenience of a teleprompter with Flip Screen Mode on your tablet or smartphone.</p>
+                <h3>Exploring the Dataset:</h3>
 
-                <h3>System Requirments</h3>
-                <p>&mdash; <strong>Operating System:</strong> Windows | Linux | MacOS<br>
-                  &mdash; <strong>Available Disk Space:</strong> 210MB<br>
-                  &mdash; <strong>RAM:</strong> 250MB on average to run app with one screen sharing session. Every new
-                  screen sharing session will need upto 100MB of extra memory on average for smooth performance.<br></p>
+                <p>To gain insights into the dataset, the program performs initial exploratory analysis. It displays the
+                  first few records of the dataset, provides information about the dataset's structure, and presents
+                  statistical summaries. Additionally, the program visualizes the frequency of spam and non-spam emails
+                  using a countplot.</p>
 
-                <h3>Development</h3>
+                <h3>Data Cleaning and Preprocessing:</h3>
 
-                <h4>Setting Up</h4>
-                <strong>Note: Built using Node version 14.15.0</stong>
-                  <p>
-                    <code>
-                      git clone https://github.com/virajbharitya/Alien<br>
-                      cd Alien<br>
-                      cd app/client && yarn install --frozen-lockfile && cd ../../ && yarn install --frozen-lockfile<br>
-                      yarn dev<br>
-                    </code>
-                  </p>
+                <p>Before training the machine learning model, the program performs data cleaning and preprocessing. It
+                  checks for missing data and removes any duplicate records. To prepare the text data for analysis, the
+                  program defines a function that removes punctuation and stopwords (common words like "and," "the,"
+                  etc.). This function tokenizes the text into words, which can be further processed.</p>
 
-                  <h4>Scripts</h4>
-                  <p><code>yarn start</code> &mdash; run in production mode to test, without packaging<br>
-                    <code>yarn test</code> &mdash; Run all unit tests<br>
-                    <code>yarn package-[win | linux | mac]</code> &mdash; to package the app and make executables
-                    available in
-                    release folder<br>
-                    <a href="https://github.com/virajbhartiya/Alien/blob/main/package.json" target="_blank">View the
-                      package.json file for all the commands</a>
-                  </p>
-                  <h3>Documentation</h3>
-                  <h4>High Level Architecture Design</h4>
-                  <p>
-                    <img src="Alien/architecture.png" class="img-responsive" alt="Alien Architecture">
-                  <h4>WebRTC Screen Sharing Session Initiation Step by Step</h4>
-                  <p>
-                    <img src="Alien/webrtc-screen-sharing-session-initiation.png" class="img-responsive"
-                      alt="WebRTC Screen Sharing Session Initiation Step by Step">
-                  </p>
+                <h3>Feature Extraction:</h3>
+                <p>To convert the processed text data into numerical features, the program uses the CountVectorizer from
+                  scikit-learn. This technique converts each email's text into a vector representation by counting the
+                  occurrences of words in the text. The resulting numerical features are essential for training the
+                  machine learning model.</p>
+
+                <h3>Model Creation and Training:</h3>
+
+                <p>The program splits the dataset into training and testing sets using the train_test_split function. It
+                  then creates a Multinomial Naive Bayes (MNB) model, which is a popular choice for text classification
+                  tasks. The model is trained on the training set using the fit() function, where it learns the patterns
+                  and characteristics of spam and non-spam emails.</p>
+
+                <h3>Model Evaluation:</h3>
+
+                <p>After training the model, it is evaluated using the testing set. The program makes predictions on the
+                  testing set using the trained model and calculates the accuracy of the predictions using the
+                  accuracy_score function. The program also generates a classification report, providing detailed
+                  performance metrics such as precision, recall, and F1-score for both spam and non-spam classes.
+                  Furthermore, a confusion matrix is created and visualized using a heatmap, allowing for a better
+                  understanding of the model's performance.</p>
+
+                <p>In conclusion, email spam detection is a crucial task in ensuring the security and efficiency of
+                  email communication. By leveraging machine learning techniques, such as NLP and the Multinomial Naive
+                  Bayes algorithm, we can develop effective solutions for detecting spam emails. This blog explored a
+                  program that implements these techniques, from data loading and preprocessing to model training and
+                  evaluation. With the ability to accurately detect spam, individuals and organizations can enhance
+                  email filtering systems, protect sensitive information, and improve overall productivity in the
+                  digital landscape.</p>
+
+
               </div>
             </div>
           </div>
