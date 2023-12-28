@@ -16,9 +16,9 @@ body {
   line-height: 1.8;
   font-size: 16px;
   font-weight: 400;
-  background: #fafafa;
+  background: #000000;
   overflow-x: hidden;
-  color: gray; }
+  color: #ede7e7; }
   body.menu-show {
     overflow: hidden;
     position: fixed;
@@ -35,13 +35,13 @@ body {
     overflow-y: hidden; }
 
 a {
-  color: #CA82F8;
+  color: #00efa6;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
   a:hover {
     text-decoration: underline;
-    color: #CA82F8; }
+    color: #00efa6; }
   a:focus, a:active {
     outline: none; }
 
@@ -66,9 +66,13 @@ span {
   color: rgba(114, 114, 114, 0.8); }
 
 h1, h2, h3, h4, h5, h6 {
-  color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
   font-family: "Playfair Display", Georgia, serif;
   margin: 0 0 10 0; }
+
+  .article h2{
+    color: #00efa6
+  }
 
 ::-webkit-selection {
   color: #fcfcfc;
@@ -212,7 +216,7 @@ h1, h2, h3, h4, h5, h6 {
           outline: none;
           text-decoration: none; }
       #heyxviraj-main-nav ul li.active a {
-        color: #CA82F8; }
+        color: #00efa6; }
   #heyxviraj-main-nav .form-group {
     margin-bottom: 40px;
     position: relative;
@@ -236,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 3em;
     border: none;
     border: 2px solid #f2f2f2;
-    background: #fafafa;
+    background: #000000;
     color: #333333 !important; }
   #heyxviraj-main-nav button {
     position: absolute;
@@ -246,7 +250,7 @@ h1, h2, h3, h4, h5, h6 {
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     border-radius: 0;
-    background: #CA82F8;
+    background: #00efa6;
     color: #fff;
     border: none;
     padding: 16px; }
@@ -320,15 +324,15 @@ header {
       font-weight: 400;
       letter-spacing: 5px;
       padding: 7px;
-      border: 1px solid #000;
+      border: none;
       display: block;
       text-align: center;
-      background: #000; }
+      background: #00efa6; }
       header .heyxviraj-navbar-brand .heyxviraj-logo span {
         display: block;
         margin-bottom: 0;
         line-height: 1.2;
-        color: #fff; }
+        color: #000; }
       header .heyxviraj-navbar-brand .heyxviraj-logo:hover {
         text-decoration: none !important; }
       header .heyxviraj-navbar-brand .heyxviraj-logo:active, header .heyxviraj-navbar-brand .heyxviraj-logo:focus {
@@ -382,7 +386,7 @@ header {
       top: 8px;
       right: -40px;
       content: '';
-      background: #000;
+      background: #00efa6;
       width: 40px;
       height: 1px; }
 
@@ -393,7 +397,7 @@ header {
     .about-desc h2 span {
       display: block;
       margin-bottom: 0;
-      color: #000;
+      color: #ffffff;
       font-size: 50px;
       font-family: "Playfair Display", Georgia, serif; }
   .about-desc .desc {
@@ -422,7 +426,7 @@ header {
         top: 8px;
         right: -40px;
         content: '';
-        background: #000;
+        background: #00efa6;
         width: 40px;
         height: 1px; }
 
@@ -432,7 +436,7 @@ header {
   left: 0;
   right: 0;
   font-size: 250px;
-  color: #f0f0f0;
+  color: #818181;
   font-weight: 700; }
   @media screen and (max-width: 768px) {
     .bold {
@@ -445,7 +449,7 @@ header {
     font-weight: 400;
     line-height: 1.5;
     margin-bottom: 1.5em;
-    color: #000;
+    color: #00efa6;
     position: relative; }
   .intro-heading span {
     display: block;
@@ -453,7 +457,7 @@ header {
     font-size: 12px;
     letter-spacing: 3px;
     margin-bottom: 10px;
-    color: #bfbfbf;
+    color: #00efa6;
     font-weight: 600; }
 
 .services-img,
@@ -706,7 +710,7 @@ header {
     margin-bottom: 10px; }
     .services ul li::before {
       content: '\2022';
-      color: #000;
+      color: #ffffff;
       display: inline-block;
       width: 1em;
       margin-left: -1em; }
@@ -774,7 +778,7 @@ header {
   .work-entry .desc .read {
     text-align: right; }
     .work-entry .desc .read a {
-      color: #000;
+      color: #ffffff;
       text-transform: uppercase;
       letter-spacing: 4px;
       font-size: 12px;
@@ -818,7 +822,7 @@ header {
   opacity: 1; }
   #heyxviraj-blog .owl-theme .owl-controls .owl-nav [class*=owl-] .owl-direction {
     background: transparent;
-    color: #000;
+    color: #ffffff;
     -webkit-box-shadow: none;
     box-shadow: none;
     border: none; }
@@ -911,9 +915,9 @@ header {
       position: absolute;
       top: -80px;
       left: 20px;
-      background: #FFE9E3;
+      background: #fff;
       color: #000;
-      padding: 20px 10px;
+      padding: 10px 10px;
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 4px;
@@ -929,7 +933,7 @@ header {
       font-size: 24px; }
       .article .desc h2 a {
         text-decoration: none;
-        color: #000; }
+        color: #ddd; }
   .article:hover .meta {
     background: #fff; }
 
@@ -951,7 +955,7 @@ header {
   border: none; }
   .testimony blockquote p {
     font-family: "Playfair Display", Georgia, serif;
-    color: #000;
+    color: #ffffff;
     font-size: 30px; }
     @media only screen and (max-width: 600px) {
       .testimony blockquote p {
@@ -960,7 +964,7 @@ header {
     }
   .testimony blockquote span {
     font-family: "Playfair Display", Georgia, serif;
-    color: #000;
+    color: #ffffff;
     font-size: 30px; }
 
 .f-entry {
@@ -974,7 +978,7 @@ header {
       color: #4d4d4d;
       text-decoration: none; }
   .f-entry .desc span {
-    color: #000;
+    color: #ffffff;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -1006,19 +1010,19 @@ header {
     outline: none !important; }
 
 .btn-primary {
-  background: #CA82F8;
+  background: #00efa6;
   color: #fff;
-  border: 2px solid #CA82F8; }
+  border: 2px solid #00efa6; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background: #d49af9 !important;
-    border-color: #d49af9 !important; }
+    background: #3cffc5 !important;
+    border-color: #3cffc5 !important; }
   .btn-primary.btn-outline {
     background: transparent;
-    color: #4d4d4d;
-    border: 1px solid #d9d9d9; }
+    color: #00efa6;
+    border: 1px solid #00efa6; }
     .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-      background: #CA82F8;
-      color: #fff; }
+      background: #00efa6;
+      color: #000; }
 
 .btn-success {
   background: #5cb85c;
@@ -1140,7 +1144,7 @@ header {
     *display: inline;
     width: 20px;
     height: 2px;
-    color: #000;
+    color: #ffffff;
     font: bold 14px/.4 Helvetica;
     text-transform: uppercase;
     text-indent: -55px;
@@ -1247,7 +1251,7 @@ header {
       font-size: 16px;
       color: rgba(0, 0, 0, 0.5); }
     .contact-info li a {
-      color: #CA82F8; }
+      color: #00efa6; }
 
 .form-control {
   -webkit-box-shadow: none;
@@ -1279,14 +1283,14 @@ input[type="text"] {
 
 .heyxviraj-social-icons i {
   font-size: 24px;
-  color: #CA82F8; }
+  color: #00efa6; }
 
 #footer {
   padding: 5em 0;
   display: block;
   width: 100%; }
   #footer h2 {
-    color: #000;
+    color: #fff;
     letter-spacing: 1px;
     font-weight: 300;
     margin-bottom: 2em; }
@@ -1296,9 +1300,9 @@ input[type="text"] {
     text-decoration: none !important; }
   #footer p.heyxviraj-social-icons i {
     font-size: 24px;
-    color: #CA82F8; }
+    color: #00efa6; }
   #footer p .block {
-    color: #1a1a1a;
+    color: #fff;
     font-size: 14px; }
   #footer .subscribe .form-control {
     -webkit-box-shadow: none;
@@ -1309,7 +1313,7 @@ input[type="text"] {
     border: none;
     border: 1px solid rgba(0, 0, 0, 0.1);
     font-size: 16px;
-    background: #fafafa;
+    background: #000000;
     font-weight: 400;
     margin-bottom: 5px;
     -webkit-border-radius: 30px;
