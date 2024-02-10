@@ -11,6 +11,10 @@
 *	Edit this section
 *
 * ======================================================= */
+*{
+  cursor: none; /* Hide system cursor */
+
+}
 body {
   font-family: "Karla", Arial, sans-serif;
   line-height: 1.8;
@@ -18,12 +22,26 @@ body {
   font-weight: 400;
   background: #000000;
   overflow-x: hidden;
-  color: #ede7e7; }
-  body.menu-show {
-    overflow: hidden;
-    position: fixed;
-    height: 100%;
-    width: 100%; }
+  color: #ede7e7; 
+}
+body.menu-show {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%; 
+}
+.cursor-circle {
+  position: fixed;
+  border-radius: 50%;
+  width: 20px; 
+  height: 20px; 
+  border: 5px solid #00efa6; 
+  background-color: transparent;
+  pointer-events: none;
+  z-index: 9999; 
+}
+
+
 
 #heyxviraj-wrapper {
   height: 100%;
@@ -1141,7 +1159,7 @@ header {
     display: -moz-inline-stack;
     display: inline-block;
     zoom: 1;
-    *display: inline;
+    display: inline;
     width: 20px;
     height: 2px;
     color: #ffffff;
