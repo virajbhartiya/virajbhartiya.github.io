@@ -176,20 +176,19 @@
 }());
 
 // cursor
-document.addEventListener('DOMContentLoaded', function () {
-	const cursorCircle = document.createElement('div');
-	cursorCircle.id = 'cursorCircle';
-	cursorCircle.className = 'cursor-circle';
-	document.body.appendChild(cursorCircle);
+if (window.innerWidth >= 1024) {
+	document.addEventListener('DOMContentLoaded', function () {
+		const cursorCircle = document.createElement('div');
+		cursorCircle.id = 'cursorCircle';
+		cursorCircle.className = 'cursor-circle';
+		document.body.appendChild(cursorCircle);
 
-
-	document.addEventListener('mousemove', function (e) {
-		cursorCircle.style.left = e.clientX + 'px'; // Use clientX and clientY for fixed positioning
-		cursorCircle.style.top = e.clientY + 'px';
+		document.addEventListener('mousemove', function (e) {
+			cursorCircle.style.left = e.clientX + 'px'; // Use clientX and clientY for fixed positioning
+			cursorCircle.style.top = e.clientY + 'px';
+		});
 	});
-
-});
-
+}
 
 // text animation
 
