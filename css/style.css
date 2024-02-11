@@ -39,10 +39,9 @@ body.menu-show {
   background-color: transparent;
   pointer-events: none;
   z-index: 9999; 
+  transition: background-color 0.3s ease;
+  mix-blend-mode: difference;
 }
-
-
-
 #heyxviraj-wrapper {
   height: 100%;
   width: 100%;
