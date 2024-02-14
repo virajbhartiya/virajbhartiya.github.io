@@ -38,8 +38,8 @@ body.menu-show {
   border: 5px solid #00efa6; 
   background-color: transparent;
   pointer-events: none;
-  z-index: 9999; 
-  transition: background-color 0.3s ease;
+  z-index: 9999;
+  transition: left 0.05s linear, top 0.05s linear; 
   mix-blend-mode: difference;
 }
 #heyxviraj-wrapper {
